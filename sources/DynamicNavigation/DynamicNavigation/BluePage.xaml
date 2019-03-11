@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:ColoredWizardPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DynamicNavigation"
+             x:Class="DynamicNavigation.BluePage"
+             BackgroundColor="DarkBlue">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Button Text="Home"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    Clicked="GoHomeButton_Clicked"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Prev"
+                            TextColor="White"
+                            VerticalOptions="Center"
+                            Clicked="GoPrevButton_Clicked"/>
+                <Button Text="Next"
+                            TextColor="White"
+                            VerticalOptions="Center"
+                            Clicked="GoNextButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</local:ColoredWizardPage>

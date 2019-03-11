@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DynamicNavigation.MainPage">
+
+    <StackLayout Margin="20">
+        <Button Text="Randomize pages" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="RandomizeButton_Clicked"/>
+        <Button Text="Next"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    Clicked="GoNextButton_Clicked"/>
+
+        <ListView x:Name="listView"/>
+    </StackLayout>
+
+</ContentPage>
